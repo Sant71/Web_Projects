@@ -1,0 +1,81 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    border: solid rgb(27, 23, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* جعل العنصر يأخذ ارتفاع الشاشة بالكامل */
+    position: relative; /* ضروري لكي يعمل ::before */
+}
+
+.container::before {
+    content: "";
+    position: absolute; /* داخل .container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/pixlr-image-generator-c083c0f8-18a7-4fac-90fb-ec377460e750.png);
+    background-size: cover; 
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+@keyframes MyFirstAnimation {
+ 0%{transform: scale(120%);}
+  }
+
+  
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* محاذاة العمود عموديًا */
+    width: 640px;
+    height: 480px;
+    border: solid;
+    padding: 15px;
+    background: rgba(251, 198, 105, 0.15); /* إضافة تأثير شفاف */
+    border-radius: 10px;
+    box-shadow: 0px 0px 73px 67px rgba(209, 102, 9, 0.431); /* ظل خفيف حول المحتوى */
+    transition: box-shadow;
+    animation-duration: 4s;
+    animation-name:MyFirstAnimation;
+margin: 60px;
+}
+
+
+
+
+
+.profile_content img {
+    width: 90%;
+    height: 85%;
+}
+.profile_content:hover{
+    box-shadow: 0px 0px 83px 87px rgba(132, 74, 23, 0.668); /* ظل خفيف حول المحتوى */
+    transform: scale(105%);
+    
+
+}
+
+.profile_content h1 {
+    background-color: rgba(238, 194, 113, 0.488);
+    border-radius: 10px;
+    width: auto;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.profile_content p {
+    background-color: rgba(232, 161, 28, 0.996);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+}
