@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Syntax and Structure</title>
+
+    
+</head>
+<body style="background-color:gray">
+<h2 style="background-color: tomato;">Most of the basics I have mastered while learning other languages.</h2>
+
+<h1>JavaScript Output</h1>
+<a href="https://www.w3schools.com/js/js_output.asp">JavaScript Output</a>
+
+    <h2 id="output">Writing into an HTML element, using innerHTML:</h2>
+
+    <h3 style="background-color: red;">Using document.write() after an HTML document is loaded, will delete all existing HTML:</h3>
+
+        <button type="button" onclick="window.alert('This is a window alert massage');console.log('Hello World ??');">window alert :Try it</button>
+
+        
+<br>
+<table border="5px" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <thead>
+        <tr>
+            <th style="height: 25px; background-color: #f2f2f2;">Keyword</th>
+            <th style="height: 25px; background-color: #f2f2f2;">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="notranslate">var</td>
+            <td>Declares a variable</td>
+        </tr>
+        <tr>
+            <td class="notranslate">let</td>
+            <td>Declares a block variable</td>
+        </tr>
+        <tr>
+            <td class="notranslate">const</td>
+            <td>Declares a block constant</td>
+        </tr>
+        <tr>
+            <td class="notranslate">if</td>
+            <td>Marks a block of statements to be executed on a condition</td>
+        </tr>
+        <tr>
+            <td class="notranslate">switch</td>
+            <td>Marks a block of statements to be executed in different cases</td>
+        </tr>
+        <tr>
+            <td class="notranslate">for</td>
+            <td>Marks a block of statements to be executed in a loop</td>
+        </tr>
+        <tr>
+            <td class="notranslate">function</td>
+            <td>Declares a function</td>
+        </tr>
+        <tr>
+            <td class="notranslate">return</td>
+            <td>Exits a function</td>
+        </tr>
+        <tr>
+            <td class="notranslate">try</td>
+            <td>Implements error handling to a block of statements</td>
+        </tr>
+        <tr>
+            <td>"use strict;" keyword</td>
+            <td>is a directive in JavaScript that enables strict mode.</td>
+        </tr>
+    </tbody>
+</table>
+</tbody>
+
+
+<h1>Variables</h1>
+<table border="2px">
+    <caption>JavaScript Variables Comparison: var, let, const</caption>
+    <thead>
+        <tr>
+            <th>Aspect</th>
+            <th>var</th>
+            <th>let</th>
+            <th>const</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Scope</td>
+            <td>Function-scoped or Globally scoped if declared outside a function</td>
+            <td>Block-scoped (within { })</td>
+            <td>Block-scoped (within { })</td>
+        </tr>
+        <tr>
+            <td>Hoisting</td>
+            <td>Yes, but initialized with undefined</td>
+            <td>Yes, but not initialized (Temporal Dead Zone)</td>
+            <td>Yes, but not initialized (Temporal Dead Zone)</td>
+        </tr>
+        <tr>
+            <td>Re-declaration</td>
+            <td>Allowed within the same scope</td>
+            <td>Not allowed within the same scope</td>
+            <td>Not allowed within the same scope</td>
+        </tr>
+        <tr>
+            <td>Re-assignment</td>
+            <td>Allowed</td>
+            <td>Allowed</td>
+            <td>Not allowed</td>
+        </tr>
+        <tr>
+            <td>Block Scope</td>
+            <td>No, it's function-scoped</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Initialization</td>
+            <td>Can be declared without initialization</td>
+            <td>Must be declared before use, can be assigned later</td>
+            <td>Must be initialized at declaration</td>
+        </tr>
+        <tr>
+            <td>Example</td>
+            <td>var x = 10;</td>
+            <td>let y = 20;</td>
+            <td>const z = 30;</td>
+        </tr>
+        <tr>
+            <td>Global Object Behavior</td>
+            <td>Becomes a property of the global object (in browsers, window.x)</td>
+            <td>Does not become a property of the global object</td>
+            <td>Does not become a property of the global object</td>
+        </tr>
+
+       
+        </tbody>
+</table>
+<br>
+<hr>
+<h1>Comments</h1>
+<p>Any text between // and the end of the line will be ignored by JavaScript (will not be executed).</p>
+<p>Multi-line comments start with /* and end with */.
+</p>
+    <script>
+        //       single-line comment
+
+        document.getElementById("output").innerHTML +="This is my first Words in javaScript (Hello Hello javascript)";
+
+        document.write("document.write : For testing purposes, it is convenient to use document.write() ");
+        /*
+        Multi-line comment
+        */
+        
+
+    </script>
+</body>
+</html>
