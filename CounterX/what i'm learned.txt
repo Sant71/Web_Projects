@@ -1,0 +1,11 @@
+Defining functions for interacting with the counter:
+
+inc() increases the value of x by 1.
+dec() decreases the value of x by 1.
+rest() resets the counter to 0.
+
+Manipulating HTML elements:
+i was used document.getElementById("disply-counting") to get an HTML element by its ID, allowing me to modify its content using JavaScript.
+
+Updating the interface:
+The updateLabel() function updates the content of the disply-counting element based on the current value of x.
